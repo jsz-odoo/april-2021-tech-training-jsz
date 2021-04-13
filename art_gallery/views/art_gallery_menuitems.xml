@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="art_work_action">
+            <field name="name">Art Work</field>
+            <field name="res_model">art.work</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem name="Art Gallery" id="menu_item_art_gallery"
+                  sequence="1"/>
+        
+        <menuitem name="Art Gallery" id="menu_item_art_gallery_sub" parent="menu_item_art_gallery"
+                  sequence="2"/>
+        
+        <menuitem name="Obras" id="menu_item_obras" parent="menu_item_art_gallery_sub" 
+                  sequence="3"
+                  action="art_work_action"/>
+    </data>
+</odoo>

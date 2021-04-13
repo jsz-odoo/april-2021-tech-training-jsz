@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 {
     "name": 'Art Gallery',
     
@@ -21,11 +22,13 @@
     "depends": ["base"],
     
     "data": [
-        
+        "security/ir.model.access.csv",
+        "views/art_gallery_views.xml",
+        "views/art_gallery_menuitems.xml",
     ],
     
     "demo": [
-        
+        "demo/demo.xml"
     ],
     
     "license": "OEEL-1",
