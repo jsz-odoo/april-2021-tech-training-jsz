@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="art_work_form_view" model="ir.ui.view">
+            <field name="name">art.work.form.view</field>
+            <field name="model">art.work</field>
+            <field name="arch" type="xml">
+                <form string="Formulario de Obras de Arte">
+                    <sheet>
+                        <h1><field name="nombre"/></h1>
+                        <group name="art_info">
+                            <group>
+                                <field name="largo"/>
+                                <field name="anchura"/>
+                            </group>
+                            <group>
+                                <field name="solo_admin"/>
+                                <field name="foto_obra"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="art_work_tree_view" model="ir.ui.view">
+            <field name="name">Art Work</field>
+            <field name="model">art.work</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre"/>
+                    <field name="largo"/>
+                    <field name="anchura"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
