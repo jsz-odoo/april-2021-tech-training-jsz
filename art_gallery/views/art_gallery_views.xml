@@ -6,17 +6,27 @@
             <field name="model">art.work</field>
             <field name="arch" type="xml">
                 <form string="Formulario de Obras de Arte">
+                    <header name="statusbar">
+                        <button string="Almacenar" type="object" name="almacenar" attrs="{'invisible': [('state', 'in', ('vendido', 'almacenado'))]}" class="oe_highlight"/>
+                        <button string="Exhibir" type="object" name="exhibir" attrs="{'invisible': [('state', '!=', 'almacenado')]}"/>
+                        <button string="Vender" type="object" name="vender" attrs="{'invisible': [('state', '=', 'vendido')]}"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
                     <sheet>
                         <h1><field name="nombre"/></h1>
                         <group name="art_info">
                             <group>
                                 <field name="largo"/>
                                 <field name="anchura"/>
+                                <field name="peso"/>
                             </group>
                             <group>
                                 <field name="solo_admin"/>
-                                <field name="foto_obra"/>
+                                <field name="foto_obra" widget="image"/>
                             </group>
+                        </group>
+                        <group name="info_adicional" string="Información Adicional">
+                            <field name="precio"/>
                         </group>
                     </sheet>
                 </form>
@@ -27,10 +37,11 @@
             <field name="name">Art Work</field>
             <field name="model">art.work</field>
             <field name="arch" type="xml">
-                <tree>
+                <tree decoration-success="state == 'vendido'">
                     <field name="nombre"/>
                     <field name="largo"/>
                     <field name="anchura"/>
+                    <field name="state" width="50px"/>
                 </tree>
             </field>
         </record>

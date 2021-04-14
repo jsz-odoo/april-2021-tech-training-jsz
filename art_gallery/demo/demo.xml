@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data noupdate="1">
+    <data>
         <record id="art_1" model="art.work">
             <field name="nombre">Starry Night</field>
             <field name="largo" eval="8.25"/>
             <field name="anchura" eval="11.0"/>
+            <field name="peso" eval="10.2"/>
+            <field name="precio" eval="1100.0"/>
         </record>
         
         <record id="art_2" model="art.work">
             <field name="nombre">Self Portrait</field>
             <field name="largo" eval="6.0"/>
             <field name="anchura" eval="10.5"/>
+            <field name="peso" eval="15.3"/>
+            <field name="precio" eval="5.25"/>
         </record>
     </data>
 </odoo>
