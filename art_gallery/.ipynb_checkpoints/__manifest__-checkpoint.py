@@ -22,9 +22,11 @@
     "depends": ["base"],
     
     "data": [
+        "security/art_gallery_security.xml",
         "security/ir.model.access.csv",
         "views/art_gallery_views.xml",
         "views/art_gallery_menuitems.xml",
+        "data/art_gallery_data.xml",
     ],
     
     "demo": [

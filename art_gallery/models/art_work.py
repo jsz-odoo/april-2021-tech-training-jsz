@@ -23,6 +23,7 @@ class ArtWork(models.Model):
         'vendido': [('invisible', True)]
     })
     precio = fields.Float(string="Precio", required=True)
+    en_venta = fields.Boolean(string="En Venta")
     
     def almacenar(self):
         self.state = 'almacenado'
@@ -32,3 +33,18 @@ class ArtWork(models.Model):
         
     def vender(self):
         self.state = 'vendido'
+
+    def poner_en_venta(self):
+        for obra in self:
+            obra.en_venta = True
+    
+    def remover_de_venta(self):
+        for obra in self:
+            self.en_venta = False
+            
+    def ir_a_pagina(self):
+        return {
+            "type": "ir.actions.act_url",
+            "url": "https://www.unam.mx/",
+            "target": "new",
+        }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.server" id="poner_venta">
+            <field name="name">Poner Obra en Venta</field>
+            <field name="model_id" ref="art_gallery.model_art_work"/>
+            <field name="binding_model_id" ref="art_gallery.model_art_work"/>
+            <field name="binding_type">action</field>
+            <field name="binding_view_types">list,form</field>
+            <field name="state">code</field>
+            <field name="code">
+if records:
+    records.poner_en_venta()
+            </field>
+        </record>
+        
+        <record model="ir.actions.server" id="remover_venta">
+            <field name="name">Remover Obra de Venta</field>
+            <field name="model_id" ref="art_gallery.model_art_work"/>
+            <field name="binding_model_id" ref="art_gallery.model_art_work"/>
+            <field name="binding_type">action</field>
+            <field name="binding_view_types">list,form</field>
+            <field name="state">code</field>
+            <field name="code">
+if records:
+    records.remover_de_venta()
+            </field>
+        </record>
+    </data>
+</odoo>

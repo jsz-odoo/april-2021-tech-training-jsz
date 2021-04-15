@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="res.groups" id="art_gallery_admin">
+            <field name="name">Art Gallery Admin</field>
+        </record>
+        
+        <record model="res.groups" id="art_gallery_user">
+            <field name="name">Art Gallery User</field>
+        </record>
+    </data>
+</odoo>
