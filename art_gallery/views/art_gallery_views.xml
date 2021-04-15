@@ -10,6 +10,7 @@
                         <button string="Almacenar" type="object" name="almacenar" attrs="{'invisible': [('state', 'in', ('vendido', 'almacenado'))]}" class="oe_highlight"/>
                         <button string="Exhibir" type="object" name="exhibir" attrs="{'invisible': [('state', '!=', 'almacenado')]}"/>
                         <button string="Vender" type="object" name="vender" attrs="{'invisible': [('state', '=', 'vendido')]}"/>
+                        <button string="Página Web" type="object" name="ir_a_pagina"/>
                         <field name="state" widget="statusbar"/>
                     </header>
                     <sheet>
@@ -26,7 +27,12 @@
                             </group>
                         </group>
                         <group name="info_adicional" string="Información Adicional">
-                            <field name="precio"/>
+                            <group>
+                                <field name="precio"/>
+                            </group>
+                            <group>
+                                <field name="en_venta"/>
+                            </group>
                         </group>
                     </sheet>
                 </form>
@@ -41,6 +47,7 @@
                     <field name="nombre"/>
                     <field name="largo"/>
                     <field name="anchura"/>
+                    <field name="en_venta" readonly="1"/>
                     <field name="state" width="50px"/>
                 </tree>
             </field>

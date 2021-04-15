@@ -1,3 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-admin_art,admin art,art_gallery.model_art_work,base.group_system,1,1,1,1
-user_art,user art,art_gallery.model_art_work,base.group_user,1,0,0,0
+admin_art,admin art,art_gallery.model_art_work,art_gallery.art_gallery_admin,1,1,1,1
+user_art,user art,art_gallery.model_art_work,art_gallery.art_gallery_user,1,0,0,0
