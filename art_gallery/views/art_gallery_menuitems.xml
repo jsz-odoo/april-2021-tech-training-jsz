@@ -8,6 +8,7 @@
         </record>
         
         <menuitem name="Art Gallery" id="menu_item_art_gallery"
+                  web_icon="art_gallery,static/src/img/gallery_icon.png"
                   sequence="1"/>
         
         <menuitem name="Art Gallery" id="menu_item_art_gallery_sub" parent="menu_item_art_gallery"
