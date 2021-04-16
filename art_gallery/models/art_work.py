@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import api, fields, models, _
+from odoo.exceptions import ValidationError
 
 class ArtWork(models.Model):
     _name = 'art.work'
@@ -22,7 +23,7 @@ class ArtWork(models.Model):
         'exhibicion': [('readonly', True)],
         'vendido': [('invisible', True)]
     })
-    precio = fields.Float(string="Precio", required=True)
+    precio = fields.Float(string='Precio', required=True)
     en_venta = fields.Boolean(string="En Venta")
     
     def almacenar(self):
@@ -48,3 +49,15 @@ class ArtWork(models.Model):
             "url": "https://www.unam.mx/",
             "target": "new",
         }
+    
+    @api.constrains('largo')
+    def _check_largo(self):
+        for obra in self:
+            if obra.largo <= 0:
+                raise ValidationError('Largo debe tener un valor positivo.')
+    
+    @api.constrains('anchura')
+    def _check_anchura(self):
+        for obra in self:
+            if obra.anchura <= 0:
+                raise ValidationError('Anchura deve tener un valor positivo.')
