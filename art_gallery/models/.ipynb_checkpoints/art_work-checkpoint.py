@@ -25,7 +25,7 @@ class ArtWork(models.Model):
     })
     precio = fields.Float(string='Precio', required=True, group_operator="sum")
     en_venta = fields.Boolean(string="En Venta")
-    artist_id = fields.Many2one(string='Artista', comodel='res.partner')
+    artist_id = fields.Many2one(string='Artista', comodel_name='res.partner')
     
     def almacenar(self):
         self.state = 'almacenado'
