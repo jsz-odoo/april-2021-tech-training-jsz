@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    <data noupdate="1">
+        <record id="artist_van_gogh" model="res.partner">
+            <field name="name">Vincent Van Gogh</field>
+        </record>
+        
+        <record id="artist_johnny" model="res.partner">
+            <field name="name">Johnny Sanchez</field>
+        </record>
+        
         <record id="art_1" model="art.work">
             <field name="nombre">Starry Night</field>
             <field name="largo" eval="8.25"/>
             <field name="anchura" eval="11.0"/>
             <field name="peso" eval="10.2"/>
             <field name="precio" eval="1100.0"/>
+            <field name="artist_id" ref="art_gallery.artist_van_gogh"/>
+            <field name="foto_obra" type="base64" file="art_gallery/static/src/img/starry_night_full.jpg"/>
         </record>
         
         <record id="art_2" model="art.work">
@@ -15,6 +25,8 @@
             <field name="anchura" eval="10.5"/>
             <field name="peso" eval="15.3"/>
             <field name="precio" eval="5.25"/>
+            <field name="artist_id" ref="art_gallery.artist_johnny"/>
+            <field name="foto_obra" type="base64" file="art_gallery/static/src/img/head_silhouette.jpg"/>
         </record>
     </data>
 </odoo>
