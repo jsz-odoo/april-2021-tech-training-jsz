@@ -23,7 +23,7 @@ class ArtWork(models.Model):
         'exhibicion': [('readonly', True)],
         'vendido': [('invisible', True)]
     })
-    precio = fields.Float(string='Precio', required=True)
+    precio = fields.Float(string='Precio', required=True, group_operator="sum")
     en_venta = fields.Boolean(string="En Venta")
     artist_id = fields.Many2one(string='Artista', comodel='res.partner')
     

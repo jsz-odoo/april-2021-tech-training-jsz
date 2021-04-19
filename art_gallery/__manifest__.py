@@ -19,7 +19,7 @@
     
     "version": "0.1",
     
-    "depends": ["base"],
+    "depends": ["base", "contacts"],
     
     "data": [
         "security/art_gallery_security.xml",

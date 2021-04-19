@@ -45,10 +45,12 @@
             <field name="model">art.work</field>
             <field name="arch" type="xml">
                 <tree decoration-success="state == 'vendido'">
+                    <groupby name="artist_id"/>
                     <field name="nombre"/>
                     <field name="largo"/>
                     <field name="anchura"/>
                     <field name="en_venta" readonly="1"/>
+                    <field name="precio" sum="Total"/>
                     <field name="state" width="50px"/>
                 </tree>
             </field>
