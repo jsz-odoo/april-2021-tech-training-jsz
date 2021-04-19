@@ -24,6 +24,7 @@
                             <group>
                                 <field name="solo_admin"/>
                                 <field name="foto_obra" widget="image"/>
+                                <field name="artist_id"/>
                             </group>
                         </group>
                         <group name="info_adicional" string="Información Adicional">
