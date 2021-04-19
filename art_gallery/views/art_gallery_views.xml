@@ -45,7 +45,9 @@
             <field name="model">art.work</field>
             <field name="arch" type="xml">
                 <tree decoration-success="state == 'vendido'">
-                    <groupby name="artist_id"/>
+                    <groupby name="artist_id">
+                        <button type="edit" name="edit" string="Edit"/>
+                    </groupby>
                     <field name="nombre"/>
                     <field name="largo"/>
                     <field name="anchura"/>
