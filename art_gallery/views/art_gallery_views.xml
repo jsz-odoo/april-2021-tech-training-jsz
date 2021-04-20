@@ -80,5 +80,25 @@
                 </activity>
             </field>
         </record>
+        
+        <record id="art_gallery_search_view" model="ir.ui.view">
+            <field name="name">art.gallery.view</field>
+            <field name="model">art.work</field>
+            <field name="arch" type="xml">
+                <search string="Art Works">
+                    <field name="nombre"/>
+                    <field name="largo"/>
+                    <field name="anchura"/>
+                    <field name="solo_admin"/>
+                    <field name="state"/>
+                    <field name="en_venta"/>
+                    
+                    <searchpanel>
+                        <field name="artist_id"/>
+                        <field name="state"/>
+                    </searchpanel>
+                </search>
+            </field>
+        </record>
     </data>
 </odoo>
