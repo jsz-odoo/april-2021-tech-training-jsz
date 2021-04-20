@@ -27,6 +27,8 @@ class ArtWork(models.Model):
     precio = fields.Float(string='Precio', required=True, group_operator="sum", tracking=True)
     en_venta = fields.Boolean(string="En Venta", tracking=True)
     artist_id = fields.Many2one(string='Artista', comodel_name='res.partner')
+    display_date_start = fields.Date(string="Display Start")
+    display_date_end = fields.Date(string="Display End")
     
     def almacenar(self):
         self.state = 'almacenado'
@@ -62,4 +64,10 @@ class ArtWork(models.Model):
     def _check_anchura(self):
         for obra in self:
             if obra.anchura <= 0:
-                raise ValidationError('Anchura deve tener un valor positivo.')
+                raise ValidationError('Anchura debe tener un valor positivo.')
+
+    @api.constrains('display_date_end')
+    def _check_display_date_end(self):
+        for obra in self:
+            if obra.display_date_end < obra.display_date_start:
+                raise ValidationError('End date needs to be greater or equal to start date.')

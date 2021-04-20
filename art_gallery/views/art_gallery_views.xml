@@ -30,9 +30,11 @@
                         <group name="info_adicional" string="Información Adicional">
                             <group>
                                 <field name="precio"/>
+                                <field name="en_venta"/>
                             </group>
                             <group>
-                                <field name="en_venta"/>
+                                <field name="display_date_start"/>
+                                <field name="display_date_end"/>
                             </group>
                         </group>
                     </sheet>
@@ -78,6 +80,16 @@
                         </div>
                     </templates>
                 </activity>
+            </field>
+        </record>
+        
+        <record id="art_gallery_calendar_view" model="ir.ui.view">
+            <field name="name">art.gallery.calendar</field>
+            <field name="model">art.work</field>
+            <field name="arch" type="xml">
+                <calendar date_start="display_date_start" date_stop="display_date_end" event_open_popup="1" mode="month">
+                    <field name="nombre"/>
+                </calendar>
             </field>
         </record>
         
