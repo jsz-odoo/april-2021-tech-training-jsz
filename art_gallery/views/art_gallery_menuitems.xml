@@ -4,7 +4,7 @@
         <record model="ir.actions.act_window" id="art_work_action">
             <field name="name">Art Work</field>
             <field name="res_model">art.work</field>
-            <field name="view_mode">tree,form,activity</field>
+            <field name="view_mode">tree,form,activity,calendar</field>
         </record>
         
         <menuitem name="Art Gallery" id="menu_item_art_gallery"
