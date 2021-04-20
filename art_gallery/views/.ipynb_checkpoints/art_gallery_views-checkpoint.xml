@@ -63,5 +63,22 @@
                 </tree>
             </field>
         </record>
+        
+        <record id="art_gallery_art_view_activity" model="ir.ui.view">
+            <field name="name">art.gallery.art.activity</field>
+            <field name="model">art.work</field>
+            <field name="arch" type="xml">
+                <activity string="Art Work">
+                    <templates>
+                        <div t-name="activity-box">
+                            <div>
+                                <field name="nombre"/>
+                                <field name="artist_id" display="full"/>
+                            </div>
+                        </div>
+                    </templates>
+                </activity>
+            </field>
+        </record>
     </data>
 </odoo>
