@@ -7,8 +7,9 @@ class ArtWork(models.Model):
     _name = 'art.work'
     _description = 'Art Work'
     _rec_name = 'nombre'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
         
-    nombre = fields.Char(string='Nombre', required=True)
+    nombre = fields.Char(string='Nombre', required=True, tracking=True)
     largo = fields.Float(string='Largo', default=1.0)
     anchura = fields.Float(string='Anchura', default=1.0)
     solo_admin = fields.Boolean(string='Opción para Administradores', groups="base.group_system")
@@ -23,8 +24,8 @@ class ArtWork(models.Model):
         'exhibicion': [('readonly', True)],
         'vendido': [('invisible', True)]
     })
-    precio = fields.Float(string='Precio', required=True, group_operator="sum")
-    en_venta = fields.Boolean(string="En Venta")
+    precio = fields.Float(string='Precio', required=True, group_operator="sum", tracking=True)
+    en_venta = fields.Boolean(string="En Venta", tracking=True)
     artist_id = fields.Many2one(string='Artista', comodel_name='res.partner')
     
     def almacenar(self):
