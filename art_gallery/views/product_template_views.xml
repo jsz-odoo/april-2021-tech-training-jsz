@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="product_template_form_view_inherit_art_gallery">
+            <field name="name">product.template.form.inherit.art.gallery</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='standard_price_uom']" position="after">
+                    <field name="is_art_work"/>
+                    <field name="art_work_id" attrs="{'invisible': [('is_art_work', '=', False)]}"/>
+                </xpath>
+                
+                <field name="active" position="attributes">
+                    <attribute name="invisible">0</attribute>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

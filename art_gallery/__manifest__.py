@@ -19,13 +19,14 @@
     
     "version": "0.1",
     
-    "depends": ["base", "contacts"],
+    "depends": ["base", "contacts", "stock"],
     
     "data": [
         "security/art_gallery_security.xml",
         "security/ir.model.access.csv",
         "views/art_gallery_views.xml",
         "views/art_gallery_menuitems.xml",
+        "views/product_template_views.xml",
         "data/art_gallery_data.xml",
     ],
     
