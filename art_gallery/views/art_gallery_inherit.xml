@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="art_work_form_view_inherit">
+            <field name="name">art.work.form.view.inherit</field>
+            <field name="model">art.work</field>
+            <field name="inherit_id" ref="art_gallery.art_work_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='exhibir']" position="attributes">
+                    <attribute name="effect">
+                        {"message":"Yeah!!!!","fadeout":"slow"}
+                    </attribute>
+                </xpath>
+                <xpath expr="//button[@name='almacenar']" position="attributes">
+                    <attribute name="effect">
+                        {"message":"¡Excelente!","fadeout":"medium"}
+                    </attribute>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>
+
