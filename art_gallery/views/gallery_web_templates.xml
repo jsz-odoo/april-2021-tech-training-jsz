@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="gallery_site">
+            <t t-call="website.layout">
+                <t t-set="title">Gallery</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1>Art Work</h1>
+                        <t t-foreach="art" t-as="aw">
+                            <h3>
+                                <t t-esc="aw.nombre"/>
+                            </h3>
+                            <img t-att-src="image_data_uri(aw.foto_obra)"/>
+                            <p>
+                                Length: <span t-field="aw.largo"/>
+                            </p>
+                            <p>
+                                Width: <span t-field="aw.anchura"/>
+                            </p>
+                        </t> 
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

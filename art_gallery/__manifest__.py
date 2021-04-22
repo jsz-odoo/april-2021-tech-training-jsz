@@ -19,7 +19,7 @@
     
     "version": "0.1",
     
-    "depends": ["base", "contacts", "stock"],
+    "depends": ["base", "contacts", "stock", "website"],
     
     "data": [
         "security/art_gallery_security.xml",
@@ -27,6 +27,7 @@
         "views/art_gallery_views.xml",
         "views/art_gallery_menuitems.xml",
         "views/product_template_views.xml",
+        "views/gallery_web_templates.xml",
         "data/art_gallery_data.xml",
     ],
     
