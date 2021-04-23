@@ -1,0 +1,428 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* art_gallery
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-23 18:31+0000\n"
+"PO-Revision-Date: 2021-04-23 18:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields.selection,name:art_gallery.selection__art_work__state__almacenado
+msgid "Almacenado"
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.art_work_form_view
+msgid "Almacenar"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__anchura
+msgid "Anchura"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.ui.menu,name:art_gallery.menu_item_art_gallery
+#: model:ir.ui.menu,name:art_gallery.menu_item_art_gallery_sub
+msgid "Art Gallery"
+msgstr ""
+
+#. module: art_gallery
+#: model:res.groups,name:art_gallery.art_gallery_admin
+msgid "Art Gallery Admin"
+msgstr ""
+
+#. module: art_gallery
+#: model:res.groups,name:art_gallery.art_gallery_user
+msgid "Art Gallery User"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_product_product__art_work_id
+#: model:ir.model.fields,field_description:art_gallery.field_product_template__art_work_id
+msgid "Art Piece"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.actions.act_window,name:art_gallery.art_work_action
+#: model:ir.model,name:art_gallery.model_art_work
+#: model_terms:ir.ui.view,arch_db:art_gallery.art_gallery_art_view_activity
+#: model_terms:ir.ui.view,arch_db:art_gallery.gallery_site
+msgid "Art Work"
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.art_gallery_search_view
+msgid "Art Works"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__artist_id
+msgid "Artista"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__display_date_end
+msgid "Display End"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__display_name
+#: model:ir.model.fields,field_description:art_gallery.field_product_template__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__display_date_start
+msgid "Display Start"
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.art_work_tree_view
+msgid "Edit"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__en_venta
+msgid "En Venta"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields.selection,name:art_gallery.selection__art_work__state__exhibicion
+msgid "En exhibición"
+msgstr ""
+
+#. module: art_gallery
+#: code:addons/art_gallery/models/.ipynb_checkpoints/art_work-checkpoint.py:0
+#: code:addons/art_gallery/models/art_work.py:0
+#, python-format
+msgid "End date needs to be greater or equal to start date."
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__state
+msgid "Estado"
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.art_work_form_view
+msgid "Exhibir"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,help:art_gallery.field_art_work__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.art_work_form_view
+msgid "Formulario de Obras de Arte"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__foto_obra
+msgid "Fotografía de la Obra"
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.gallery_site
+msgid "Gallery"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__id
+#: model:ir.model.fields,field_description:art_gallery.field_product_template__id
+msgid "ID"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,help:art_gallery.field_art_work__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,help:art_gallery.field_art_work__message_needaction
+#: model:ir.model.fields,help:art_gallery.field_art_work__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,help:art_gallery.field_art_work__message_has_error
+#: model:ir.model.fields,help:art_gallery.field_art_work__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.art_work_form_view
+msgid "Información Adicional"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_product_product__is_art_work
+#: model:ir.model.fields,field_description:art_gallery.field_product_template__is_art_work
+msgid "Is Art Piece"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__largo
+msgid "Largo"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work____last_update
+#: model:ir.model.fields,field_description:art_gallery.field_product_template____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.gallery_site
+msgid "Length:"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__nombre
+msgid "Nombre"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,help:art_gallery.field_art_work__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,help:art_gallery.field_art_work__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,help:art_gallery.field_art_work__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.ui.menu,name:art_gallery.menu_item_obras
+msgid "Obras"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__solo_admin
+msgid "Opción para Administradores"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__peso
+msgid "Peso"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.actions.server,name:art_gallery.poner_venta
+msgid "Poner Obra en Venta"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__precio
+msgid "Precio"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model,name:art_gallery.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.art_work_form_view
+msgid "Página Web"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.actions.server,name:art_gallery.remover_venta
+msgid "Remover Obra de Venta"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,help:art_gallery.field_art_work__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.art_work_tree_view
+msgid "Total"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,help:art_gallery.field_art_work__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.art_work_form_view
+msgid "Vender"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields.selection,name:art_gallery.selection__art_work__state__vendido
+msgid "Vendido"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,field_description:art_gallery.field_art_work__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: art_gallery
+#: model:ir.model.fields,help:art_gallery.field_art_work__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: art_gallery
+#: model_terms:ir.ui.view,arch_db:art_gallery.gallery_site
+msgid "Width:"
+msgstr ""
