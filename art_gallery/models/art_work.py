@@ -70,4 +70,4 @@ class ArtWork(models.Model):
     def _check_display_date_end(self):
         for obra in self:
             if obra.display_date_end < obra.display_date_start:
-                raise ValidationError('End date needs to be greater or equal to start date.')
+                raise ValidationError(_('End date needs to be greater or equal to start date.'))
